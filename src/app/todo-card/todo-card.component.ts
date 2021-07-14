@@ -12,8 +12,8 @@ export class TodoCardComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  title = "ToDo Task"
-  description = "Learn Angular"
+  title = "ToDo Task";
+  description = "Learn Angular";
   dueDate = "till September"
 
 }
