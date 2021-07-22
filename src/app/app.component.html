@@ -1,5 +1,6 @@
+<button (click)='createTask()'> Add new task</button>
 
-<app-todo-card>
-
-</app-todo-card>
-
+<app-todo-card *ngFor="let row of todoTaskRow"
+    (confirm)="addTask($event)"
+    [rowData]="row"
+></app-todo-card>
