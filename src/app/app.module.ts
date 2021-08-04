@@ -1,31 +1,25 @@
-import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
-import { TodoCardComponent } from './todo-card/todo-card.component';
+import { ProvidersViewProvidersModule } from './providers-view-providers/providers-view-providers.module';
+import { ResolutionModifiersModule } from './resolution-modifiers/resolution-modifiers.module';
 
 
 @NgModule({
+
   declarations: [
-    AppComponent,
-    TodoCardComponent,
-    
-  ],
+    AppComponent],
+
+
   imports: [
     BrowserModule,
-    CommonModule,
-    FormsModule,
-    ReactiveFormsModule,
-    
+    ProvidersViewProvidersModule,
+    ResolutionModifiersModule
+ 
   ],
-  exports: [
-    ReactiveFormsModule,
-    CommonModule,
-    FormsModule,
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+ 
+
+  bootstrap: [AppComponent],
+  providers: []
 })
 export class AppModule { }
