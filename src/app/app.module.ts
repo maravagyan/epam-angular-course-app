@@ -6,20 +6,18 @@ import { ResolutionModifiersModule } from './resolution-modifiers/resolution-mod
 
 
 @NgModule({
-
   declarations: [
-    AppComponent],
-
+    AppComponent
+  ],
 
   imports: [
     BrowserModule,
     ProvidersViewProvidersModule,
     ResolutionModifiersModule
- 
   ],
  
-
   bootstrap: [AppComponent],
   providers: []
 })
+
 export class AppModule { }
